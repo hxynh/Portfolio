@@ -1,16 +1,12 @@
 const asyncHandler = require('express-async-handler')
+const Project = require('../models/projectModel')
 
 // @desc    Get Projects
 // @route   GET /api/projects
 // @access  Private
 const getProjects = asyncHandler (async (req, res) => {
-    const {id} = req.body
-    if(!id) {
-        res.status(400)
-        throw new Error('Project not found')
-    }
-
-    res.status(200).json({message: 'Get Projects'})
+    const projects = await Project.find(req._id)
+    res.status(200).json(projects)
 })
 
 module.exports = {
