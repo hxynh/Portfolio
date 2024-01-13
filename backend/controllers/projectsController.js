@@ -5,7 +5,7 @@ const Project = require('../models/projectModel')
 // @route   GET /api/projects
 // @access  Private
 const getProjects = asyncHandler (async (req, res) => {
-    const projects = await Project.find(req._id)
+    const projects = await Project.find()
     res.status(200).json(projects)
 })
 

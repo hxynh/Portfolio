@@ -1,0 +1,30 @@
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.profilePic {
+    width: 35%;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutMe {
+    padding: 0;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.aboutMe p{
+    margin: 20px 0;
+    padding: 0
+}
+

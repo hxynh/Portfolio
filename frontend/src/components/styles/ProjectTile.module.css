@@ -1,0 +1,33 @@
+.tileSection {
+    width: 45%;
+    height: 80vh
+}
+
+.projectImg {
+    width: 100%;
+    height: 60%;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.projectImg:hover {
+    transform: scale(1.05);
+}
+
+.name{
+    margin: 15px 0;
+}
+
+.detailBtn {
+    display: inline-block;
+    width: 8rem;
+    height: 2.5rem;
+    color: #262322;
+    text-decoration: none;
+}
+
+.detailBtn:hover {
+    cursor: pointer;
+    font-weight: 600;
+
+}
