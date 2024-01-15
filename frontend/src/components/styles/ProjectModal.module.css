@@ -1,0 +1,44 @@
+/* Modal.css */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 50%;
+    padding: 5% 8%;
+  }
+  
+  .modalClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    padding: 8px 10px;
+    height: 8%;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .modalClose:hover {
+    background: #eee;
+    color: #555;
+    font-weight: bold;
+  }
+  
