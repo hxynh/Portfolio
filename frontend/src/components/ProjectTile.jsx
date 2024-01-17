@@ -17,7 +17,7 @@ export default function ProjectTile({imgSrc, projectName, description, codeURL, 
         <>
         <div className={classes.tileSection}>
             <img src={imgSrc} alt="project" className={classes.projectImg} onClick={openModal}/>
-            <h2 className={classes.name}>{projectName}</h2>
+            <h2 className={classes.name} onClick={openModal}>{projectName} </h2>
             <ProjectModal 
                 name={projectName}  
                 isOpen={isModalOpen} 

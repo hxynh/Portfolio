@@ -13,6 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 app.use('/api/projects', require('./routes/projectsRoute'))
+app.use('/api/sendEmail', require('./routes/emailRoute'))
 
 // Overwrite the default handler with custom errorHandler
 app.use(errorHandler)

@@ -1,6 +1,42 @@
 .projectTiles {
-    padding: 5%;
-    display: flex;
+    padding: 5% 0;
     justify-content: space-between;
     color: #262322;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
+
+
+.projectList {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 16px; 
+  }
+
+  .projectList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-300%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .previousButton {
+    left: 0;
+    display: none; /* Initially hide the previous button */
+  }
+  
+  .nextButton {
+    right: 0;
+  }
