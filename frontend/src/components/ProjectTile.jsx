@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import classes from "./styles/ProjectTile.module.css";
 import ProjectModal from "./ProjectModal";
 

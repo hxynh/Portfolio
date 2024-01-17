@@ -1,4 +1,5 @@
 import classes from "./styles/Contact.module.css";
+import {toast} from "react-toastify";
 
 export default function Contact() {
     const handleSubmit = async (event) => {
@@ -15,11 +16,14 @@ export default function Contact() {
             });
       
             if (response.ok) {
-              console.log('Email sent successfully');
+              toast.success('Email sent successfully!')
+              console.log('Email sent successfully!!');
             } else {
+              toast.error('Failed to send email!')
               console.error('Failed to send email');
             }
         } catch (error) {
+            toast.error(error);
             console.error('Error:', error);
         }
     };
