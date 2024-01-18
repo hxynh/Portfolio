@@ -12,6 +12,7 @@
 }
 
 .aboutMe {
+    position: relative;
     padding: 0;
 }
 
@@ -28,3 +29,19 @@
     padding: 0
 }
 
+.saveBtn {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    border-radius: 6px;
+    border: 1px solid black;
+    height: 2.5rem;
+    width: 10rem;
+    cursor: pointer;
+}
+
+.saveBtn:hover {
+    background-color: #948a8a;
+    color: white;
+    border: 1px solid white;
+}

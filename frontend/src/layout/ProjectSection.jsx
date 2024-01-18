@@ -53,7 +53,6 @@ export default function ProjectSection () {
 
     return (
         <div className={classes.projectTiles}>
-         
             <div className={classes.projectList} ref={projectListRef} onScroll={scrollHandler}>
             {projects.map ( (project) => 
                 <ProjectTile 
@@ -65,14 +64,14 @@ export default function ProjectSection () {
                     vercelURL={project.vercelURL}/>
                 )
             }
-      </div>
-      <button id="previousButton" className={`${classes.scrollButton} ${classes.previousButton}`} onClick={handlePreviousClick}>
-        &lt;
-      </button>
-      <button id="nextButton" className={`${classes.scrollButton} ${classes.nextButton}`} onClick={handleNextClick}>
-        &gt;
-      </button>
-    </div>
+            </div>
+            <button id="previousButton" className={`${classes.scrollButton} ${classes.previousButton}`} onClick={handlePreviousClick}>
+                &lt;
+            </button>
+            <button id="nextButton" className={`${classes.scrollButton} ${classes.nextButton}`} onClick={handleNextClick}>
+                &gt;
+            </button>
+        </div>
   );
 };
          
