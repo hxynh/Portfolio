@@ -9,18 +9,18 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter([
-  { path: '/', 
-    element: <Home />,
-    loader: projectsLoader      
-  },
   {
     path: '/',
     element: <RootLayout />,
     children: [
+      { path: '/', 
+        element: <Home />,
+        loader: projectsLoader      
+    },
       {path: 'about-me', element: <AboutMe />},
       {path: 'contact', element: <Contact />}
     ]
-  }    
+  }
 ])
 
 
