@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import classes from "./styles/TopNavBar.module.css"
 
 export default function TopNavBar() {
   return (
-    <header className={classes.header}>
+    <header className="header">
         <div>
             <Link to='/'><strong>Nancy</strong>Hou</Link>
         </div>

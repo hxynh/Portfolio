@@ -3,14 +3,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-    height: 85vh;
 }
 
 .profilePic {
     width: 35%;
     padding: 0;
     margin: 0;
-    height: 100%;
 }
 
 .aboutMe {
@@ -24,13 +22,11 @@
     margin-bottom: 2%;
     text-transform: uppercase;
     text-align: center;
-    color: #eef2f3;
 }
 
 .aboutMe p{
     margin: 20px 0;
-    padding: 0;
-    color: #dce3e6
+    padding: 0
 }
 
 .saveBtn {
