@@ -4,7 +4,6 @@ import classes from "./styles/About.module.css";
 import {saveAs} from "file-saver";
 import resume from '../assets/Resume.docx'
 
-
 export default function AboutMe() {
 
     return (
@@ -18,7 +17,6 @@ export default function AboutMe() {
                     className={classes.saveBtn}>
                     Download Resume
                 </button>
-                
             </div>
             
             
