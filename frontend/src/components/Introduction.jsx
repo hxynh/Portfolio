@@ -12,7 +12,7 @@ export default function Introduction({scrollYProgress}) {
 
     return (
         <main>
-            <h3 style={{y:textY}}>Hello! I am Nancy Hou, <br/> a Front-End Developer based in <br/>Toronto, Ontario</h3>
+            <motion.h3 style={{y:textY}}>Hello! I am Nancy Hou, <br/> a Front-End Developer based in <br/>Toronto, Ontario</motion.h3>
 
             <button onClick={navigateHandler} className={classes.aboutBtn}>Learn More</button>
         </main>
