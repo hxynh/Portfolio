@@ -1,8 +1,9 @@
 .tileSection {
-    width: 45%;
-    height: 80vh;
+    width: 40%;
+    height: 70vh;
     flex: 0 0 auto;
     margin: 1rem 1.5rem; 
+    
 }
 
 .projectImg {
@@ -15,10 +16,12 @@
 .projectImg:hover {
     transform: scale(1.05);
     cursor: pointer;
+    
 }
 
 .name{
     margin: 15px 0;
+    color: #dce3e6;
 }
 
 .name:hover{

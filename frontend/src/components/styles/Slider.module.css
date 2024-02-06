@@ -19,6 +19,10 @@
     height: 300px; 
   }
   
+  .active h2 {
+    color: #dce3e6;
+  }
+  
   .slide.active {
     display: block;
   }
