@@ -12,8 +12,8 @@ export default function Home() {
     const navigation = useNavigation();
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
-      target: ref,
-      offset: ["start start", "end start"]
+       target: ref,
+       offset: ["start start", "end start"]
     });
     const backgroundY = useTransform(scrollYProgress, [0,1], ["0%", "100%"]);
   
@@ -24,9 +24,9 @@ export default function Home() {
         <div className={classes.gridHeader}>
           <TopNavBar />
         </div>
-        <Introduction scrollYProgress={scrollYProgress}/>
+        <Introduction scrollYProgress={scrollYProgress}/> 
 
-        <motion.div style={{y: backgroundY}}className={classes.fullImg} />  
+        <motion.div style={{y:backgroundY}}className={classes.fullImg} /> 
         <div className={classes.mountain}/>
     </div>
 
