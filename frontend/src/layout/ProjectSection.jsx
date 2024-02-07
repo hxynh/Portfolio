@@ -6,21 +6,6 @@ import classes from "./styles/ProjectSection.module.css";
 import ProjectTile from "../components/ProjectTile";
 
 export default function ProjectSection () {
-    /* Fetching backend API with useEffect
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get('/api/projects');
-                setProjects(response.data);
-                console.log(response.data)
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        }
-        fetchData();
-    }, []) */
     const projects = useLoaderData();
 
     const projectListRef = useRef();
@@ -43,11 +28,11 @@ export default function ProjectSection () {
     };
 
     const handlePreviousClick = () => {
-        projectListRef.current.scrollLeft -= 200; // Adjust the scroll amount as needed
+        projectListRef.current.scrollLeft -= 200; 
     };
 
     const handleNextClick = () => {
-        projectListRef.current.scrollLeft += 200; // Adjust the scroll amount as needed
+        projectListRef.current.scrollLeft += 200;
     };
 
 
