@@ -45,7 +45,6 @@
 }
 
 .saveBtn:hover {
-    background-color: #948a8a;
+    background-color: #293E42;
     color: white;
-    border: 1px solid white;
 }

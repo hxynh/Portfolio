@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import classes from "./styles/TopNavBar.module.css"
 
 export default function TopNavBar() {
+   const location = useLocation();
+
   return (
     <header className={classes.header}>
         <div>
@@ -9,13 +11,13 @@ export default function TopNavBar() {
         </div>
         <ul>
             <li>
-                <Link to='/'>Home</Link>
+                <Link to='/' className={location.pathname === "/" ? classes.active : ""}>Home</Link>
             </li>
             <li>
-                <Link to='about-me'>About Me</Link>
+                <Link to='about-me' className={location.pathname === "/about-me" ? classes.active : ""}>About Me</Link>
             </li>
             <li>
-                <Link to='contact'>Let's connect</Link>
+                <Link to='contact' className={location.pathname === "/contact" ? classes.active : ""}>Let's connect</Link>
             </li>
         </ul>
     </header>
