@@ -22,7 +22,7 @@ export default function ProjectTile({imgSrc, projectName, description, codeURL, 
                 name={projectName}  
                 isOpen={isModalOpen} 
                 onClose={closeModal}>
-                <h2 className={classes.name}>{projectName}</h2>
+                <h2>{projectName}</h2>
                 <a 
                     className={classes.detailBtn} 
                     href={vercelURL}
