@@ -14,9 +14,6 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.use("/", (req,res)=>{
-    res.status(200).json("Connected")
-})
 app.use('/api/projects', require('./routes/projectsRoute'))
 app.use('/api/sendEmail', require('./routes/emailRoute'))
 
