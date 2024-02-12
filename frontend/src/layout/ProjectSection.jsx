@@ -7,8 +7,11 @@ import ProjectTile from "../components/ProjectTile";
 
 export default function ProjectSection () {
     const projects = useLoaderData();
-
     const projectListRef = useRef();
+
+    if (!projects || !projects.length) {
+        return null
+    };
 
     const scrollHandler = () => {
         const scrollLeft = projectListRef.current.scrollLeft;
@@ -64,6 +67,7 @@ export default function ProjectSection () {
 export async function loader() {
     try {
         const response = await axios.get('/api/projects');
+        console.log("loading projects...")
         return response.data
       } catch (error) {
         console.error('Error fetching data:', error);
