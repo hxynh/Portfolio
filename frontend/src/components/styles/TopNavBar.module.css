@@ -1,5 +1,5 @@
 
-.header {
+.headerNav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,30 +9,30 @@
     z-index: 20;
   }
 
-  .header a {
+  .headerNav a {
     color: white;
   }
   
-  .header ul {
+  .headerNav ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   
-  .header ul li {
+  .headerNav ul li {
     margin-left: 20px;
   }
   
-  .header ul li a {
+  .headerNav ul li a {
     display: flex;
     align-items: center;
   }
   
-  .header ul li a:hover, .header ul li a.active {
+  .headerNav ul li a:hover, .headerNav ul li a.active {
     color: #7CA397;
     font-weight: bold;
   }
   
-  .header ul li a svg {
+  .headerNav ul li a svg {
     margin-right: 5px;
   }

@@ -5,7 +5,7 @@ export default function TopNavBar() {
    const location = useLocation();
 
   return (
-    <header className={classes.header}>
+    <header className={classes.headerNav}>
         <div>
             <Link to='/'><strong>Nancy</strong>Hou</Link>
         </div>
