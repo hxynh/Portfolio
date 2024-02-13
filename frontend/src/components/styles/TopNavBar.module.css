@@ -36,3 +36,9 @@
   .headerNav ul li a svg {
     margin-right: 5px;
   }
+
+  .custom-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
