@@ -66,7 +66,7 @@ export default function ProjectSection () {
 
 export async function loader() {
     try {
-        const response = await axios.get('/api/projects');
+        const response = await axios.get('https://portfolio-backend-azure-nine.vercel.app/api/projects');
         console.log("loading projects...")
         return response.data
       } catch (error) {
