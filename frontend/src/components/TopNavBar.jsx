@@ -5,7 +5,7 @@ export default function TopNavBar() {
    const location = useLocation();
 
   return (
-    <div className={classes.headerNav}>
+    <header className={classes.headerNav}>
         <div>
             <Link to='/'><strong>Nancy</strong>Hou</Link>
         </div>
@@ -20,6 +20,6 @@ export default function TopNavBar() {
                 <Link to='contact' className={location.pathname === "/contact" ? classes.active : ""}>Let's connect</Link>
             </li>
         </ul>
-    </div>
+    </header>
   )
 }
