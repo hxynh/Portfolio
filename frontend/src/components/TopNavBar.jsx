@@ -5,7 +5,7 @@ export default function TopNavBar() {
    const location = useLocation();
 
   return (
-    <div className={classes.headerNav}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <div>
             <Link to='/'><strong>Nancy</strong>Hou</Link>
         </div>
