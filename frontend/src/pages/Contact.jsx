@@ -7,7 +7,7 @@ export default function Contact() {
         const fd = new FormData(event.target);
         const data = Object.fromEntries(fd.entries()); 
         try {
-            const response = await fetch('/api/sendEmail', {
+            const response = await fetch('https://portfolio-backend-azure-nine.vercel.app/api/sendEmail', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

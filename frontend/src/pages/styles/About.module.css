@@ -36,12 +36,14 @@
 .saveBtn {
     position: absolute;
     right: 0;
-    margin-right: 10%;
-    border-radius: 6px;
-    border: 1px solid black;
-    height: 2.5rem;
     width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #eef2f3;
     cursor: pointer;
+    border: 2px solid #eef2f3;
 }
 
 .saveBtn:hover {
